@@ -61,7 +61,7 @@ input-dump
 
 # Teste da API de produtos
 
-O script testeApi.sh fará requisições a cada segundo, a primeira será com 'id' = 0, e continuará até 'id' = 599, para totalizar 10 minutos (ou mais). Além disso, o script fará requisições com 'id' = 0 a cada 10 requisições, para testar se está bloqueando (lançar 403 Forbidden). Notar que após 10 minutos, não haverá 403 Forbidden, pois a requisição id=0 está liberada.
+O script testeApi.sh fará requisições a cada segundo, a primeira será com 'id' = 0, e continuará até 'id' = 600, para totalizar 10 minutos. Além disso, o script fará requisições com 'id' = 0 a cada 10 requisições, para testar se está bloqueando (lançar 403 Forbidden). Notar que após 10 minutos, não haverá 403 Forbidden, pois a requisição id=0 está liberada.
 
 # Teste agregador de URLs
 
