@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from flask import Flask, request, abort
 from flask_api import status
 import json
-#oi
+
 app = Flask(__name__)
 lista = []  # Lista para colocar requisicoes
 

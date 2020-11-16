@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for counter in $(seq 0 570)
+for counter in $(seq 0 600)
 do
 	if ! (($counter % 10));	then
 		curl -XPOST http://127.0.0.1:5000/linx.com/products/ -d '[{"id": 0, "name":"mesa"}]'
