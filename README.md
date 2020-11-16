@@ -3,7 +3,9 @@
 Python 3.6 ou superior:<br/>
 ```
 sudo apt-get install python3.6
-pip:
+```
+pip:<br/>
+```
 sudo apt-get install python-pip
 ```
 Bibliotecas:<br/>
@@ -31,11 +33,11 @@ cd backend-challenge-linx/part-1/src
 ```
 pip install -r requirements.txt
 ```
-3. Executar apiProdutos.py <br/>
+3. Executar apiProdutos.py em um terminal<br/>
 ```
 python3 apiProdutos.py
 ```
-4. Para teste manual executar: <br/>
+4. Para teste manual, executar em outro terminal: <br/>
 ```
 curl -XPOST http:/127.0.0.1:5000/linx.com/products/ -d '[{"id": "123", "name": "mesa"}]'
 ```
