@@ -1,6 +1,6 @@
 # Dependências:
 
-Flask 1.1.1: pip install FLask
+eteste
 
 # Executar soluções:
 # Solução 1
