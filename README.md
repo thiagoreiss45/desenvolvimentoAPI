@@ -1,23 +1,34 @@
 # Dependências:
 
-eteste
+Python 3.6 ou superior:
+sudo apt-get install python3.6
+pip:
+sudo apt-get install python-pip
+Bibliotecas:
+pip install -r requirements.txt
+Curl:
+sudo apt-get -y install curl
+Git:
+sudo apt-get install git
 
 # Executar soluções:
 # Solução 1
-Para solução 1, deve-se executar o apiProdutos.py, e fazer requisições com o curl, exemplo:
 
-Terminal 1: 
-$ python apiProdutos.py
-
-Terminal 2: 
-$ curl -X POST -H 'Content-Type: application/json' http://127.0.0.1:5000/api/echo-json -d '[{"id": "123", "name": "mesa"}]'
-
-Ou executar o testeApi.sh, que fará requisições automáticas:
-
-Terminal 2: 
-$ ./testeApi.sh
+1. Clonar repositório:
+git clone https://github.com/thiagoreiss45/backend-challenge-linx
+cd backend-challenge-linx/part-1/src
+2. Instalar bibliotecas:
+pip install -r requirements.txt
+3. Executar apiProdutos.py 
+python3 part_1.py
+4. Para teste manual executar: 
+curl -XPOST http:/127.0.0.1:5000/linx.com/products/ -d '[{"id": "123", "name": "mesa"}]'
+5. Para o teste automatizado:
+cd backend-challenge-linx/part-1/teste
+./testeApi.sh
 
 # Solução 2
+
 
 Deve-se executar agregador-url.py e informar o nome do arquivo que será transformado em um dump melhorado, exemplo:
 
