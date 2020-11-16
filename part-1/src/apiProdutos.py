@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from flask import Flask, request, abort
 from flask_api import status
 import json
-
+#oi
 app = Flask(__name__)
 lista = []  # Lista para colocar requisicoes
 
@@ -30,9 +30,11 @@ def negar_request_igual_por_10min():
         for i in range(0, len(lista), 2):
             if lista[i] == objeto_requisicao.conteudo:
                 if objeto_requisicao.hora_do_request < lista[i+1] + timedelta(minutes=10):
-                    print('Forbidden')
+                    print(dado)
+                    print("")
                     return f"{status.HTTP_403_FORBIDDEN} Forbidden\n"
-        
+        print(dado)
+        print("")
         lista.append(objeto_requisicao.conteudo)
         lista.append(objeto_requisicao.hora_do_request)
         return f"{status.HTTP_201_CREATED} OK\n"
