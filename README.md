@@ -14,16 +14,16 @@ sudo apt-get install git
 # Executar soluções:
 # Solução 1
 
-1. Clonar repositório:
-git clone https://github.com/thiagoreiss45/backend-challenge-linx
-cd backend-challenge-linx/part-1/src
-2. Instalar bibliotecas:
+1. Clonar repositório:<br/>
+```git clone https://github.com/thiagoreiss45/backend-challenge-linx \
+cd backend-challenge-linx/part-1/src```
+2. Instalar bibliotecas:<br/>
 pip install -r requirements.txt
-3. Executar apiProdutos.py 
+3. Executar apiProdutos.py <br/>
 python3 part_1.py
-4. Para teste manual executar: 
+4. Para teste manual executar: <br/>
 curl -XPOST http:/127.0.0.1:5000/linx.com/products/ -d '[{"id": "123", "name": "mesa"}]'
-5. Para o teste automatizado:
+5. Para o teste automatizado:<br/>
 cd backend-challenge-linx/part-1/teste
 ./testeApi.sh
 
